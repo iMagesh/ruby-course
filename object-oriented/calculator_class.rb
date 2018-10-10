@@ -36,6 +36,12 @@ class ScientificCalculator < Calculator
     puts "Square root of #{@a} = #{Math.sqrt(@a)}"
     puts "Square root of #{@b} = #{Math.sqrt(@b)}"
   end
+
+  def sin; puts "Sin(#{@a}) = #{Math.sin(@a)}"; end
+  def cos; puts "Cos(#{@a}) = #{Math.cos(@a)}"; end
+  def tan; puts "Tan(#{@a}) = #{Math.tan(@a)}"; end
+  def log10; puts "log10(#{@a}) = #{Math.log10(@a)}"; end
+
 end
 
 test = Calculator.new(10,5)
@@ -50,3 +56,5 @@ sample.a = 10
 sample.b = 5
 sample.square_root
 puts sample.divide
+puts sample.inspect
+puts sample.log10
