@@ -4,4 +4,4 @@ class B
   end
 end
 
-> Array.new(50) { rand(100) }.grep(B)
+puts Array.new(50) { rand(100) }.grep(B)
